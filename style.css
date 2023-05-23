@@ -85,15 +85,17 @@ section .title::after {
 /* nav-menu styling */
 #nav-menu {
   position: fixed;
+  
   width: 100%;
   z-index: 999;
   padding: 30px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
-#nav-menu.sticky {
+#nav-menu {
   padding: 15px 0;
-  background: crimson;
+  /* background: crimson; */
+  background: black;
 }
 #nav-menu .max-width {
   display: flex;
@@ -105,6 +107,7 @@ section .title::after {
   font-size: 35px;
   font-weight: 600;
 }
+
 #nav-menu .logo a span {
   color: crimson;
   transition: all 0.3s ease;
@@ -689,6 +692,15 @@ footer span a:hover {
     width: 100%;
     margin-bottom: 35px;
   }
+}
+
+.download{
+  border-radius: 30px;
+  border: solid white 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 @media (max-width: 690px) {
