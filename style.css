@@ -83,7 +83,7 @@ section .title::after {
 }
 
 /* navbar styling */
-.navbar {
+#nav-menu {
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -91,32 +91,32 @@ section .title::after {
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
-.navbar.sticky {
+#nav-menu.sticky {
   padding: 15px 0;
   background: crimson;
 }
-.navbar .max-width {
+#nav-menu .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.navbar .logo a {
+#nav-menu .logo a {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
-.navbar .logo a span {
+#nav-menu .logo a span {
   color: crimson;
   transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span {
+#nav-menu.sticky .logo a span {
   color: #fff;
 }
-.navbar .menu li {
+#nav-menu .menu li {
   list-style: none;
   display: inline-block;
 }
-.navbar .menu li a {
+#nav-menu .menu li a {
   display: block;
   color: #fff;
   font-size: 18px;
@@ -124,10 +124,10 @@ section .title::after {
   margin-left: 25px;
   transition: color 0.3s ease;
 }
-.navbar .menu li a:hover {
+#nav-menu .menu li a:hover {
   color: crimson;
 }
-.navbar.sticky .menu li a:hover {
+#nav-menu.sticky .menu li a:hover {
   color: #fff;
 }
 
@@ -167,7 +167,7 @@ section .title::after {
 }
 
 /* home section styling */
-.home {
+#home {
   display: flex;
   background: url("images/stack.jpg") no-repeat center;
   background-color: #111;
@@ -178,30 +178,30 @@ section .title::after {
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
 }
-.home .max-width {
+#home .max-width {
   width: 100%;
   display: flex;
 }
-.home .max-width .row {
+#home .max-width .row {
   margin-right: 0;
 }
-.home .home-content .text-1 {
+#home .home-content .text-1 {
   font-size: 27px;
 }
-.home .home-content .text-2 {
+#home .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
-.home .home-content .text-3 {
+#home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
-.home .home-content .text-3 span {
+#home .home-content .text-3 span {
   color: crimson;
   font-weight: 500;
 }
-.home .home-content a {
+#home .home-content a {
   display: inline-block;
   background: crimson;
   color: #fff;
@@ -213,7 +213,7 @@ section .title::after {
   border: 2px solid crimson;
   transition: all 0.3s ease;
 }
-.home .home-content a:hover {
+#home .home-content a:hover {
   color: crimson;
   background: none;
 }
@@ -308,9 +308,11 @@ section .title::after {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-
+.skills-card-name{
+  text-align: center;
+}
 /* skills section styling */
-.skills-images img {
+.skills-card-img{
   height: 160px;
   width: 170px;
   border-radius: 5%;
@@ -323,80 +325,8 @@ section .title::after {
   content: "what i know";
 }
 
-/* skills right column */
-.skills .skills-content .column {
-  width: calc(50% - 30px);
-  /* border: 2px solid black; */
-  height: 60vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.skills .skills-content .left .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.skills .skills-content .left p {
-  text-align: justify;
-}
-.skills .skills-content .left a {
-  display: inline-block;
-  background: crimson;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid crimson;
-  transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover {
-  color: crimson;
-  background: none;
-}
-.skills .skills-content .right .bars {
-  margin-bottom: 15px;
-}
-.skills .skills-content .right .info {
-  display: flex;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
-}
-.skills .skills-content .right span {
-  font-weight: 500;
-  font-size: 18px;
-}
-.skills .skills-content .right .line {
-  height: 5px;
-  width: 100%;
-  background: lightgrey;
-  position: relative;
-}
-.skills .skills-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: crimson;
-}
-.skills-content .right .html::before {
-  width: 90%;
-}
-.skills-content .right .css::before {
-  width: 60%;
-}
-.skills-content .right .js::before {
-  width: 80%;
-}
-.skills-content .right .php::before {
-  width: 50%;
-}
-.skills-content .right .mysql::before {
-  width: 70%;
-}
+
+
 
 /* project section styling */
 .project .title::after {
@@ -634,7 +564,7 @@ footer span a:hover {
   .menu-btn i.active:before {
     content: "\f00d";
   }
-  .navbar .menu {
+  #nav-menu .menu {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -645,24 +575,24 @@ footer span a:hover {
     padding-top: 80px;
     transition: all 0.3s ease;
   }
-  .navbar .menu.active {
+  #nav-menu .menu.active {
     left: 0;
   }
-  .navbar .menu li {
+  #nav-menu .menu li {
     display: block;
   }
-  .navbar .menu li a {
+  #nav-menu .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
   }
-  .home .home-content .text-2 {
+  #home .home-content .text-2 {
     font-size: 70px;
   }
-  .home .home-content .text-3 {
+  #home .home-content .text-3 {
     font-size: 35px;
   }
-  .home .home-content a {
+  #home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
@@ -695,13 +625,13 @@ footer span a:hover {
   .max-width {
     padding: 0 23px;
   }
-  .home .home-content .text-2 {
+  #home .home-content .text-2 {
     font-size: 60px;
   }
-  .home .home-content .text-3 {
+  #home .home-content .text-3 {
     font-size: 32px;
   }
-  .home .home-content a {
+  #home .home-content a {
     font-size: 20px;
   }
   .services .serv-content .card {
@@ -710,10 +640,10 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
-  .home .home-content .text-2 {
+  #home .home-content .text-2 {
     font-size: 50px;
   }
-  .home .home-content .text-3 {
+  #home .home-content .text-3 {
     font-size: 27px;
   }
   .about .about-content .right .text,
