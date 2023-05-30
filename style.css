@@ -647,6 +647,10 @@ footer span a:hover {
     width: 100%;
   }
 
+  #stat{
+    display: block;     
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -678,5 +682,10 @@ footer span a:hover {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
+
+
+    #stat{
+      display: block;     
+    }
   }
 }
