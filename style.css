@@ -131,6 +131,7 @@ section .title::after {
   color: #fff;
 }
 
+
 /* menu btn styling */
 .menu-btn {
   color: #fff;
@@ -551,7 +552,12 @@ footer span a {
 footer span a:hover {
   text-decoration: underline;
 }
-
+#resume-button-1{
+  color: white;
+  background-color: transparent;
+  border: none;
+  font: bold;
+}
 /* responsive media query start */
 @media (max-width: 1104px) {
   .about .about-content .left img {
