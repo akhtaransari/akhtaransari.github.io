@@ -165,7 +165,16 @@ section .title::after {
 .scroll-up-btn:hover {
   filter: brightness(90%);
 }
-
+#stat{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+ 
+}
+#stats{
+  text-align: center;
+}
 /* home section styling */
 #home {
   display: flex;
@@ -637,6 +646,7 @@ footer span a:hover {
   .services .serv-content .card {
     width: 100%;
   }
+
 }
 
 @media (max-width: 500px) {
@@ -660,6 +670,7 @@ footer span a:hover {
   .right form .error-box {
     width: 150px;
   }
+  
   .scroll-up-btn {
     right: 15px;
     bottom: 15px;
