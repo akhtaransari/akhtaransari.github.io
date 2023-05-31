@@ -349,8 +349,8 @@ section .title::after {
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
-  /* overflow: hidden;
-  transition: all 0.3s ease; */
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 #projects .carousel .project-card:hover {
   background: crimson;
@@ -360,10 +360,10 @@ section .title::after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;
 }
 #projects .carousel .project-card:hover .box {
-  /* transform: scale(1.05); */
+  transform: scale(1.05);
 }
 #projects .carousel .project-card .text {
   font-size: 25px;
@@ -410,7 +410,7 @@ section .title::after {
   object-fit: cover;
   border-radius: 5%;
   border: 5px solid crimson;
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;
 }
 #projects .carousel .project-card:hover img {
   border-color: #fff;
