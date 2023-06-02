@@ -142,6 +142,7 @@ section .title::after {
   justify-content: space-between;
  
 }
+
 #stats{
   text-align: center;
 }
@@ -398,12 +399,12 @@ section .title::after {
 }
 
 #projects .carousel .project-card img {
-  height: 250px;
-  width: 250px;
+  height: 300px;
   object-fit: cover;
   border-radius: 5%;
   border: 5px solid crimson;
   transition: all 0.3s ease;
+  align-items: center;
 }
 #projects .carousel .project-card:hover img {
   border-color: #fff;
@@ -554,6 +555,7 @@ footer span a:hover {
     height: 350px;
     width: 350px;
   }
+  
 }
 
 @media (max-width: 991px) {
@@ -562,6 +564,10 @@ footer span a:hover {
   }
 }
 @media (max-width: 947px) {
+  #stat{
+    display: block; 
+    justify-content: center;
+  }
   .menu-btn {
     display: block;
     z-index: 999;
@@ -627,6 +633,10 @@ footer span a:hover {
 }
 
 @media (max-width: 690px) {
+  #stat{
+    display: block; 
+    justify-content: center;
+  }
   .max-width {
     padding: 0 23px;
   }
@@ -645,6 +655,10 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
+  #stat{
+    display: block; 
+    justify-content: center;
+  }
   #home .home-content .text-2 {
     font-size: 50px;
   }
