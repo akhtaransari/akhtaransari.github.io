@@ -35,7 +35,7 @@ section {
   padding: 0 80px;
   margin: auto;
 }
-.about,
+#about,
 .services,
 #skills,
 #projects,
@@ -43,7 +43,7 @@ section {
 footer {
   font-family: "Poppins", sans-serif;
 }
-.about .about-content,
+#about .about-content,
 .services .serv-content,
 #skills .skills-content,
 .contact .contact-content {
@@ -91,12 +91,8 @@ section .title::after {
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
   background-color: black;
+}
 
-}
-#nav-menu.sticky {
-  padding: 15px 0;
-  background: crimson;
-}
 #nav-menu .max-width {
   display: flex;
   align-items: center;
@@ -133,6 +129,22 @@ section .title::after {
   color: #fff;
 }
 
+#resume-button-1{
+  color: white;
+  background-color: transparent;
+  border: none;
+  font: bold;
+}
+#stat{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+ 
+}
+#stats{
+  text-align: center;
+}
 
 /* menu btn styling */
 .menu-btn {
@@ -222,33 +234,33 @@ section .title::after {
 }
 
 /* about section styling */
-.about .title::after {
+#about .title::after {
   content: "who i am";
 }
-.about .about-content .left {
+#about .about-content .left {
   width: 45%;
 }
-.about .about-content .left img {
+#about .about-content .left img {
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
-.about .about-content .right {
+#about .about-content .right {
   width: 55%;
 }
-.about .about-content .right .text {
+#about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.about .about-content .right .text span {
+#about .about-content .right .text span {
   color: crimson;
 }
-.about .about-content .right p {
+#about .about-content .right p {
   text-align: justify;
 }
-.about .about-content .right a {
+#about .about-content .right a {
   display: inline-block;
   background: crimson;
   color: #fff;
@@ -260,7 +272,7 @@ section .title::after {
   border: 2px solid crimson;
   transition: all 0.3s ease;
 }
-.about .about-content .right a:hover {
+#about .about-content .right a:hover {
   color: crimson;
   background: none;
 }
@@ -280,7 +292,7 @@ section .title::after {
   background: #111;
   content: "what i provide";
 }
-.services .serv-content .project-card {
+.services .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
   text-align: center;
@@ -289,29 +301,28 @@ section .title::after {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.services .serv-content .project-card:hover {
+.services .serv-content .card:hover {
   background: crimson;
 }
-.services .serv-content .project-card .box {
+.services .serv-content .card .box {
   transition: all 0.3s ease;
 }
-.services .serv-content .project-card:hover .box {
+.services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
-.services .serv-content .project-card i {
+.services .serv-content .card i {
   font-size: 50px;
   color: crimson;
   transition: color 0.3s ease;
 }
-.services .serv-content .project-card:hover i {
+.services .serv-content .card:hover i {
   color: #fff;
 }
-.services .serv-content .project-card .text {
+.services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-
 
 /* skills section styling */
 .skills-card-name{
@@ -331,9 +342,6 @@ section .title::after {
   content: "what i know";
 }
 
-
-
-
 /* project section styling */
 #projects .title::after {
   content: "see my work";
@@ -349,16 +357,7 @@ section .title::after {
 #projects .carousel .project-card:hover {
   background: crimson;
 }
-#projects .carousel .project-card .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-#projects .carousel .project-card:hover .box {
-  transform: scale(1.05);
-}
+
 #projects .carousel .project-card .text {
   font-size: 25px;
   font-weight: 500;
@@ -548,15 +547,10 @@ footer span a {
 footer span a:hover {
   text-decoration: underline;
 }
-#resume-button-1{
-  color: white;
-  background-color: transparent;
-  border: none;
-  font: bold;
-}
+
 /* responsive media query start */
 @media (max-width: 1104px) {
-  .about .about-content .left img {
+  #about .about-content .left img {
     height: 350px;
     width: 350px;
   }
@@ -600,7 +594,7 @@ footer span a:hover {
   #home .home-content .text-2 {
     font-size: 70px;
   }
-  #home .home-content .text-3 {
+  #hom .home-content .text-3 {
     font-size: 35px;
   }
   #home .home-content a {
@@ -610,18 +604,18 @@ footer span a:hover {
   .max-width {
     max-width: 930px;
   }
-  .about .about-content .column {
+  #about .about-content .column {
     width: 100%;
   }
-  .about .about-content .left {
+  #about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
-  .about .about-content .right {
+  #about .about-content .right {
     flex: 100%;
   }
-  .services .serv-content .project-card {
+  .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
@@ -645,14 +639,9 @@ footer span a:hover {
   #home .home-content a {
     font-size: 20px;
   }
-  .services .serv-content .project-card {
+  .services .serv-content .card {
     width: 100%;
   }
-
-  #stat{
-    display: block;     
-  }
-
 }
 
 @media (max-width: 500px) {
@@ -662,7 +651,7 @@ footer span a:hover {
   #home .home-content .text-3 {
     font-size: 27px;
   }
-  .about .about-content .right .text,
+  #about .about-content .right .text,
   #skills .skills-content .left .text {
     font-size: 19px;
   }
@@ -676,7 +665,6 @@ footer span a:hover {
   .right form .error-box {
     width: 150px;
   }
-  
   .scroll-up-btn {
     right: 15px;
     bottom: 15px;
@@ -684,10 +672,5 @@ footer span a:hover {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
-
-
-    #stat{
-      display: block;     
-    }
   }
 }
