@@ -51,6 +51,7 @@
     </section>
     <!-- about section start -->
     <section id="about" class="about section">
+        <div class="max-width">
         <h2 class="title">About Me</h2>
         <div  class="nav-link about">
             <div class="max-width">
@@ -71,6 +72,7 @@
             </div>
             </div>
         </div>
+    </div>
     </section>
     <!-- services section start -->
      <section class="services" id="services">
@@ -107,6 +109,7 @@
         <h2 class="title">My skills</h2>
         <div class="max-width">
             <div class="skills-content" >
+                <div class="column left">
                     <div class="skills-card">
                         <div><img class="skills-card-img" src="/images/java.svg" alt=""></div>
                         <h3 class="skills-card-name">Java</h3>
@@ -123,6 +126,8 @@
                         <div><img class="skills-card-img" src="/images/github.svg" alt=""></div>
                         <h3 class="skills-card-name">GitHub</h3>
                     </div>
+                </div>
+                <div class="column right">
                     <div class="skills-card">
                         <div><img class="skills-card-img" src="/images/spring.svg" alt=""></div>
                         <h3 class="skills-card-name">SpringBoot</h3>
@@ -139,47 +144,47 @@
                         <div><img  class="skills-card-img" src="/images/javascript.svg" alt=""></div>
                         <h3 class="skills-card-name" > JavaScript</h3>
                     </div>
+                </div>
             </div>
         </div>
-
-        <div class="max-width" id="githubs">
-            <div class="main-text">
-                
-                <h2><span>GitHub </span>Statistics</h2>
-    
-            </div>
-            <div id="stat" >
-              <div >
-                  <img class ="ht1"  id="github-stats-card"  src='https://github-readme-stats.vercel.app/api?username=akhtaransari&show_icons=true&theme=dark' >
-              </div>
-              <div  >
-                  <img class = "ht1" id="github-streak-stats"    src='https://github-readme-streak-stats.herokuapp.com/?user=akhtaransari&theme=dark' >
-              </div>
-            </div>
-            <div id="stats">
-                <img class = "ht1" id="github-top-langs" src='https://github-readme-stats.vercel.app/api/top-langs/?username=akhtaransari&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact' >
-            </div>
-            
-    
-            <div >
-                <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-                <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+        <section id="githubs">
+            <div class="max-width" >
+                <div class="main-text">
+                    
+                    <h2><span>GitHub </span>Statistics</h2>
         
-                <div class="react-activity-calendar">
                 </div>
-                <script>
-                GitHubCalendar(".calendar", "akhtaransari");
-                // or enable responsive functionality
-                GitHubCalendar(".calendar", "akhtaransari", { responsive: true });
-                </script>
-            </div>
-        </div>      
+                <div id="stat" >
+                  <div >
+                      <img class ="ht1"  id="github-stats-card"  src='https://github-readme-stats.vercel.app/api?username=akhtaransari&show_icons=true&theme=dark' >
+                  </div>
+                  <div  >
+                      <img class = "ht1" id="github-streak-stats"    src='https://github-readme-streak-stats.herokuapp.com/?user=akhtaransari&theme=dark' >
+                  </div>
+                </div>
+                <div id="stats">
+                    <img class = "ht1" id="github-top-langs" src='https://github-readme-stats.vercel.app/api/top-langs/?username=akhtaransari&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact' >
+                </div>
+                <div >
+                    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+                    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+            
+                    <div class="react-activity-calendar">
+                    </div>
+                    <script>
+                    GitHubCalendar(".calendar", "akhtaransari");
+                    // or enable responsive functionality
+                    GitHubCalendar(".calendar", "akhtaransari", { responsive: true });
+                    </script>
+                </div>
+            </div>    
+        </section>  
 
     </section>
     <!-- projects section start -->
     <section id="projects" class="nav-link projects">
-        <h2 class="title">Projects</h2>
         <div class="max-width" >
+            <h2 class="title">Projects</h2>
             <div class="carousel owl-carousel">
 
                 <div class="project-card">
