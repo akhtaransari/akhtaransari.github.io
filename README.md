@@ -29,4 +29,4 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=akhtaransari&show_icons=true&locale=en&theme=tokyonight" alt="akhtaransari" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=akhtaransari&&theme=tokyonight" alt="akhtaransari" /></p>
+<p><img align="center"  src="https://github-readme-streak-stats.herokuapp.com/?user=akhtaransari&&theme=tokyonight&card_width=300" alt="akhtaransari" /></p>
