@@ -71,3 +71,56 @@ $(document).ready(function () {
     },
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const themeButton = document.getElementById('theme-button');
+  let anchors = document.querySelectorAll('#contact a');
+  let skills_card = document.querySelectorAll('.skills-card');
+  const body = document.body;
+  let isDarkTheme = localStorage.getItem('theme') === 'dark';
+
+  function toggleTheme() {
+      isDarkTheme = !isDarkTheme;
+      body.classList.toggle('dark-theme');
+
+      if (isDarkTheme) {
+          themeButton.classList.remove('uil-moon');
+          themeButton.classList.add('uil-sun');
+          document.body.style.backgroundColor="#333";
+          document.body.style.color="white";
+          skills_card.forEach(card => {
+            card.style.borderColor = 'white';
+          });        
+          anchors.forEach(element => {
+            element.style.color="white"
+          });
+          localStorage.setItem('theme', 'dark');
+      } else {
+          themeButton.classList.remove('uil-sun');
+          themeButton.classList.add('uil-moon');
+          document.body.style.backgroundColor="#f2f2f2";
+          document.body.style.color="black";
+          anchors.forEach(element => {
+            element.style.color="black"
+          });
+          skills_card.forEach(card => {
+            card.style.borderColor = 'black';
+          });
+          localStorage.setItem('theme', 'light');
+      }
+  }
+
+  themeButton.addEventListener('click', toggleTheme);
+
+  if (isDarkTheme) {
+      toggleTheme(); // Apply dark theme if user previously selected it
+  }
+});
+
+
+document.getElementById('theme-button').addEventListener('click', function(event) {
+  event.preventDefault();
+  // Add your theme change logic here
+});
