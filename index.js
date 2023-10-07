@@ -1,13 +1,10 @@
 $(document).ready(function () {
   $(window).scroll(function () {
-    // sticky nav-menu on scroll script
     if (this.scrollY > 20) {
       $(".nav-menu").addClass("sticky");
     } else {
       $(".nav-menu").removeClass("sticky");
     }
-
-    // scroll-up button show/hide script
     if (this.scrollY > 500) {
       $(".scroll-up-btn").addClass("show");
     } else {
@@ -15,25 +12,20 @@ $(document).ready(function () {
     }
   });
 
-  // slide-up script
   $(".scroll-up-btn").click(function () {
     $("html").animate({ scrollTop: 0 });
-    // removing smooth scroll on slide-up button click
     $("html").css("scrollBehavior", "auto");
   });
 
   $("#nav-menu .menu li a").click(function () {
-    // applying again smooth scroll on menu items click
     $("html").css("scrollBehavior", "smooth");
   });
 
-  // toggle menu/nav-menu script
   $(".menu-btn").click(function () {
     $("#nav-menu .menu").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
   });
 
-  // typing text animation script
   var typed = new Typed(".typing", {
     strings: ["Back-End Developer", "Latte Art Artist", "Fitness Trainer","Front-End Developer"],
     typeSpeed: 100,
@@ -48,7 +40,6 @@ $(document).ready(function () {
     loop: true,
   });
 
-  // owl carousel script
   $(".carousel").owlCarousel({
     margin: 20,
     loop: true,
@@ -115,12 +106,11 @@ document.addEventListener('DOMContentLoaded', function() {
   themeButton.addEventListener('click', toggleTheme);
 
   if (isDarkTheme) {
-      toggleTheme(); // Apply dark theme if user previously selected it
+      toggleTheme();
   }
 });
 
 
 document.getElementById('theme-button').addEventListener('click', function(event) {
   event.preventDefault();
-  // Add your theme change logic here
 });
