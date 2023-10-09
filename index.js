@@ -1,3 +1,10 @@
+try {
+  GitHubCalendar(".calendar", "akhtaransari");
+  GitHubCalendar(".calendar", "akhtaransari", { responsive: true });
+} catch (error) {
+  console.log(error);
+}
+
 $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 20) {
@@ -64,51 +71,60 @@ $(document).ready(function () {
 });
 
 
+const themeButton = document.getElementById('theme-button');
+let anchors = document.querySelectorAll('#contact a');
+let skills_card = document.querySelectorAll('.skills-card');
+const body = document.body;
+let isDarkTheme = localStorage.getItem('theme');
 
-document.addEventListener('DOMContentLoaded', function() {
-  const themeButton = document.getElementById('theme-button');
-  let anchors = document.querySelectorAll('#contact a');
-  let skills_card = document.querySelectorAll('.skills-card');
-  const body = document.body;
-  let isDarkTheme = localStorage.getItem('theme') === 'dark';
+// Initial theme setup
+if (isDarkTheme === 'dark') {
+    darkTheme();
+} else {
+    lightTheme();
+}
 
-  function toggleTheme() {
-      isDarkTheme = !isDarkTheme;
-      body.classList.toggle('dark-theme');
-
-      if (isDarkTheme) {
-          themeButton.classList.remove('uil-moon');
-          themeButton.classList.add('uil-sun');
-          document.body.style.backgroundColor="#333";
-          document.body.style.color="white";
-          skills_card.forEach(card => {
-            card.style.borderColor = 'white';
-          });        
-          anchors.forEach(element => {
-            element.style.color="white"
-          });
-          localStorage.setItem('theme', 'dark');
-      } else {
-          themeButton.classList.remove('uil-sun');
-          themeButton.classList.add('uil-moon');
-          document.body.style.backgroundColor="#f2f2f2";
-          document.body.style.color="black";
-          anchors.forEach(element => {
-            element.style.color="black"
-          });
-          skills_card.forEach(card => {
-            card.style.borderColor = 'black';
-          });
-          localStorage.setItem('theme', 'light');
-      }
-  }
-
-  themeButton.addEventListener('click', toggleTheme);
-
-  if (isDarkTheme) {
-      toggleTheme();
-  }
+themeButton.addEventListener('click', () => {
+    isDarkTheme = localStorage.getItem('theme'); // Update theme setting
+    if (isDarkTheme === 'dark') {
+        lightTheme(); // Toggle to light theme
+    } else {
+        darkTheme(); // Toggle to dark theme
+    }
 });
+
+
+
+
+function darkTheme(){
+        body.classList.add('dark-theme');
+        themeButton.classList.remove('uil-moon');
+        themeButton.classList.add('uil-sun');
+        document.body.style.backgroundColor = "#333";
+        document.body.style.color = "white";
+        skills_card.forEach(card => {
+            card.style.borderColor = 'white';
+        });
+        anchors.forEach(element => {
+            element.style.color = "white";
+        });
+        localStorage.setItem('theme', 'dark');
+}
+
+function lightTheme() {
+        body.classList.remove('dark-theme');
+        themeButton.classList.remove('uil-sun');
+        themeButton.classList.add('uil-moon');
+        document.body.style.backgroundColor = "#f2f2f2";
+        document.body.style.color = "black";
+        anchors.forEach(element => {
+            element.style.color = "black";
+        });
+        skills_card.forEach(card => {
+            card.style.borderColor = 'white';
+        });
+        localStorage.setItem('theme', 'light');
+}
 
 
 document.getElementById('theme-button').addEventListener('click', function(event) {
