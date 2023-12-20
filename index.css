@@ -347,7 +347,7 @@ section .title::after {
 /* skills section styling */
 
 
-.skills-card-img{
+.skills-card-img,svg{
   height: 160px;
   width: 170px;
   border-radius: 5%;
