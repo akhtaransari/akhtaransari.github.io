@@ -6,9 +6,28 @@
 
 <p align="left"> <a href="https://twitter.com/akhtaransariin" target="blank"><img src="https://img.shields.io/twitter/follow/akhtaransariin?logo=twitter&style=for-the-badge" alt="akhtaransari" /></a> </p>
 
-- 🔭 I’m currently learning **JAVA Back-End & Spring**
- 
-- 💬 Ask me about **Spring, Java, Hibernate, JavaScript.**
+
+- 🔭 I’m a **Full Stack Development** with a focus on:
+  - **JAVA Back-End & Spring**
+  - **React for Front-End**
+  - **Generative AI**
+  - **Manual Quality Analysis**
+
+## Expertise
+
+- 💬 Ask me about:
+  - **Spring**
+  - **Java**
+  - **Hibernate**
+  - **JavaScript**
+  - **React**
+  - **Generative AI**
+  - **Manual Quality Analysis**
+
+## Contact
+
+- 📧 Feel free to reach out if you have any questions or if there's anything specific you'd like to explore in these domains!
+
 
 - 📫 You will find me at **akhtaransari.info@gmail.com**
 
